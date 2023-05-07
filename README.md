@@ -1,6 +1,6 @@
 # Language translation microservice communication contract
 
-This microservice allows the user to translate languages by using a text translator API service. It is written in JavaScript (Node.js).
+This microservice allows the user to translate languages by using a translator API service. It is written in JavaScript (Node.js).
 
 ## Why is the project useful?
 
