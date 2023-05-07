@@ -56,6 +56,7 @@ request(options, function (error, response, translation) {
 });
 ```
 ---
+**Visual Studio Code**:
 
 ![display output](https://user-images.githubusercontent.com/91235854/236703295-9cd4fc82-bfb5-411e-8280-256914e0d22e.png)
 ---
