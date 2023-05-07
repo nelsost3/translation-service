@@ -11,8 +11,7 @@ The project is useful because it offers the ability to understand translations i
 1.) The installation of a source code editor such as **Visual Studio Code** (https://code.visualstudio.com/)  
 2.) The installation of **Node.js** (https://nodejs.org/en)  
 3.) The installation of the **Request Module** (https://www.geeksforgeeks.org/node-js-request-module/#)  
-4.) A free subscription to **RapidAPI** for a basic translation service which allows 100,000 characters per month and 1,000 requests.  
-    The subscription service can be found here: (https://rapidapi.com/dickyagustin/api/text-translator2/pricing)
+4.) A free subscription to **RapidAPI** for a basic translation service which allows 100,000 characters per month and 1,000 requests. The subscription service can be found here: (https://rapidapi.com/dickyagustin/api/text-translator2/pricing)
 
 ## Requesting data from the microservice
 
