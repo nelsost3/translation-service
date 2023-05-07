@@ -36,7 +36,7 @@ const options = {
   url: 'https://text-translator2.p.rapidapi.com/translate',
   headers: {
     'content-type': 'application/x-www-form-urlencoded',
-    'X-RapidAPI-Key': '9b2a234464mshbdbaeb36f269ce1p163aabjsna9dcf0e1a0a3',
+    'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
     'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
   },
   form: {
