@@ -84,7 +84,7 @@ The user will need to make a **GET** request to the microservice and return the 
 
 ## Running the microservice
 
-1. first get the request from the user interface entries for the three variables: **source_language**, **target_language**, and **text_translation**.   The source_language and target_language will need to match Language Codes so the API can recognize them (examples are ‘en’ for English and ‘fr’ for French). A full list of the language codes can be found here (https://rapidapi.com/dickyagustin/api/text-translator2/details).
+1. first get the request from the user interface entries for the three variables: **source_language**, **target_language**, and **text_translation**.   The source_language and target_language will need to match Language Codes so the API can recognize them (examples are ‘en’ for English and ‘fr’ for French). A full list of the language codes can be found **here**: (https://rapidapi.com/dickyagustin/api/text-translator2/details).
 2. The const variables for **source_language**, **target_language**, and **text_translation** will need to be adjusted via the user’s selection from the drop-down menus for selected languages along with the text user entry for translation on the frontend. One possibility might be to use useState with an import from ‘react’ to handle the adjustments in the language selection options. 
 
 At the present moment the microservice returns the text translation via hard coded constant variables to show the translation API is working correctly and is also accurate. My partner is using five languages and told me them in advance so here are the language codes listed below for the different languages:
