@@ -1,4 +1,4 @@
-# Language translation microservice communication contract
+# Language translation microservice communication contract 🦉
 
 This microservice allows the user to translate languages by using a translator API service. It is written in JavaScript (Node.js).
 
@@ -21,6 +21,42 @@ To get a language translation, the microservice will need to make a POST request
 >>2.)	**target_language**: the language the user would like to be the translation output language from the source (ex. ‘fr’ for French).  
 >>3.)	**text_translation**: the text input which will be converted (ex. ‘What is your name?’) by the user. The text entry in this input field should be from the     source_language as the language of origin.  
 The user will need to run **npm install request** in the terminal and then run **node microservice.js**. Shown below is an example call:
+
+```ruby
+// Reference: https://rapidapi.com/dickyagustin/api/text-translator2/details
+
+const request = require('request');
+
+const source_language = 'en';       // the source language: 'en' for English
+const target_language = 'fr';       // the target translation language: 'fr' for French
+const text_translation = 'What is your name?';    
+// the text string we would like to translate from source to target language
+
+const options = {
+  method: 'POST',
+  url: 'https://text-translator2.p.rapidapi.com/translate',
+  headers: {
+    'content-type': 'application/x-www-form-urlencoded',
+    'X-RapidAPI-Key': '9b2a234464mshbdbaeb36f269ce1p163aabjsna9dcf0e1a0a3',
+    'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
+  },
+  form: {
+    source_language: source_language,
+    target_language: target_language,
+    text: text_translation
+  }
+};
+
+request(options, function (error, response, translation) {
+	if (error) throw new Error(error);
+
+  const result = JSON.parse(translation);       // convert text into a JavaScript object
+  translatedText = result.data.translatedText;  // to select the data (translation) result
+
+	console.log(translatedText);
+});
+```
+---
 
 ![display output](https://user-images.githubusercontent.com/91235854/236703295-9cd4fc82-bfb5-411e-8280-256914e0d22e.png)
 ---
